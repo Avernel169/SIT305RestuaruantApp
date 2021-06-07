@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectMenu">
+
+    <TextView
+        android:id="@+id/PlaceName"
+        android:layout_width="205dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="61dp"
+        android:gravity="center"
+        android:text="Place Name"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/MapLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/MapLocation"
+        android:layout_width="217dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="97dp"
+        android:gravity="center"
+        android:text="Location"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PlaceName" />
+
+    <Button
+        android:id="@+id/getCurrentLocation"
+        android:layout_width="203dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="103dp"
+        android:text="Get current location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapShow" />
+
+    <Button
+        android:id="@+id/mapShow"
+        android:layout_width="208dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="103dp"
+        android:text="Show on map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MapLocation" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="227dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="52dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getCurrentLocation" />
+</androidx.constraintlayout.widget.ConstraintLayout>
